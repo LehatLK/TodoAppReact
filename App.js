@@ -24,7 +24,7 @@ export default function App() {
           {notes.map((note, index) => (
             <View key={index} style={styles.noteItem}>
               <Text>{note}</Text>
-              <DeleteButton onDelete={() => deleteNote(index)} />
+              <DeleteButton onPress={() => deleteNote(index)} />
             </View>
           ))}
         </ScrollView>
