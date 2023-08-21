@@ -11,7 +11,7 @@ export default function App() {
   );
 }
 
-///how do i make boxes in node?
+///how do i make boxes in js?
 
 
 const styles = StyleSheet.create({
