@@ -1,15 +1,21 @@
 import React from "react";
-import { TouchableOpacity, Text } from "react-native";
+import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 
 const Addbutton = ({ onPress }) => {
     return(
-<TouchableOpacity onPress={onPress}>
+        < View style ={ styles.addButton}>
+        <TouchableOpacity onPress={onPress}>
         <Text>Add</Text>
-</TouchableOpacity>
-
-
+        </TouchableOpacity>
+        </View>
     );
 };
 
-
+const styles = StyleSheet.create({
+    addButton:{
+        borderColor: 'black',
+        borderRadius : 5,
+        borderWidth: 3,
+    }
+})
 export default Addbutton;
