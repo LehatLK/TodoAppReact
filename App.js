@@ -7,6 +7,7 @@ import NotesTextField from './COMPONENT/notesTextField';
 export default function App() {
   return (
     <View style={styles.container}>
+
       <DeleteButton></DeleteButton>
       <NotesTextField onAdd={(note) => console.log('Added', note)} />
       <StatusBar style="auto" />
@@ -14,19 +15,12 @@ export default function App() {
   );
 }
 
-///how do i make boxes in js?
-
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#89CFF0',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
   },
-content: {
-  flex: 1,
-  alignItems: 'center',
-  justifyContent:'center',
-},
 });
