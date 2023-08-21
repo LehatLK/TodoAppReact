@@ -1,3 +1,5 @@
+/*
+
 import React from "react";
 import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 
@@ -19,3 +21,4 @@ const styles = StyleSheet.create({
     }
 })
 export default Addbutton;
+*/
