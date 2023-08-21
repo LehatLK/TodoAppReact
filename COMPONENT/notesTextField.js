@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 20,
-    backgroundColor: 'black',
+    backgroundColor: 'white',
   },
   input: {
     flex: 1,
