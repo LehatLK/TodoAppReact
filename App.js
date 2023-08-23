@@ -23,7 +23,7 @@ export default function App() {
         <ScrollView style={styles.notesList}>
           {notes.map((note, index) => (
             <View key={index} style={styles.noteItem}>
-              <Text>{note}</Text>
+              <Text style={styles.noteText}>{note}</Text>
               <DeleteButton onPress={() => deleteNote(index)} />
             </View>
           ))}
@@ -46,8 +46,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   notesList: {
-    maxHeight: 200, // Set a maximum height for the notes list
+    maxHeight: 550, // Set a maximum height for the notes list
     width: '100%',
+    marginTop: 50,
   },
   noteItem: {
     flexDirection: 'row',
@@ -61,7 +62,8 @@ const styles = StyleSheet.create({
   HeaderText:{
     fontSize :36 ,
     fontWeight:'bold',
-    marginTop: 20,
-    marginBottom: 50,
+  },
+  noteText:{
+    fontSize: 15,
   },
 });
