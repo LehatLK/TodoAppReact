@@ -19,7 +19,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Text>Todo List App</Text>
+        <Text style={styles.HeaderText}>Todo List App</Text>
         <ScrollView style={styles.notesList}>
           {notes.map((note, index) => (
             <View key={index} style={styles.noteItem}>
@@ -57,5 +57,11 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     borderBottomWidth: 1,
     borderBottomColor: 'black',
+  },
+  HeaderText:{
+    fontSize :36 ,
+    fontWeight:'bold',
+    marginTop: 20,
+    marginBottom: 50,
   },
 });
